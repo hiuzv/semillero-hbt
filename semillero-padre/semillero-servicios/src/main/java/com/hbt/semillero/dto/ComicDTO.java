@@ -13,14 +13,14 @@ import com.hbt.semillero.enums.TematicaEnum;
  * 
  * @author ccastano
  */
-public class ComicDTO implements Serializable {
+public class ComicDTO extends ResultadoDTO implements Serializable {
 
 	/**
 	 * Atributo que determina
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String id;
+	private Long id;
 	private String nombre;
 	private String editorial;
 	private TematicaEnum tematicaEnum;
@@ -48,9 +48,13 @@ public class ComicDTO implements Serializable {
 	 * @param estadoEnum
 	 * @param cantidad
 	 */
-	public ComicDTO(String id, String nombre, String editorial, TematicaEnum tematicaEnum, String coleccion,
+	public ComicDTO() {
+	}
+	
+	public ComicDTO(Long id, String nombre, String editorial, TematicaEnum tematicaEnum, String coleccion,
 			Integer numeroPaginas, BigDecimal precio, String autores, Boolean color, LocalDate fechaVenta,
 			EstadoEnum estadoEnum, Long cantidad) {
+		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.editorial = editorial;
@@ -70,17 +74,17 @@ public class ComicDTO implements Serializable {
 	 * 
 	 * @return El id asociado a la clase
 	 */
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
 	/**
 	 * Metodo encargado de modificar el valor del atributo id
 	 * 
-	 * @param id El nuevo id a modificar.
+	 * @param long1 El nuevo id a modificar.
 	 */
-	public void setId(String id) {
-		this.id = id;
+	public void setId(Long long1) {
+		this.id = long1;
 	}
 
 	/**

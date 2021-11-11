@@ -84,30 +84,32 @@ public class CreacionComicTest {
 		 */
 		LocalDate localDate = LocalDate.now();
 
-		ComicDTO comic01 = new ComicDTO("01", "One Piece", "editorial", TematicaEnum.AVENTURAS, "coleccion", 1000,
+		
+		ComicDTO comic01 = new ComicDTO(01L, "One Piece", "editorial", TematicaEnum.AVENTURAS, "coleccion", 1000,
 				new BigDecimal(10000000), "autor", true, localDate, EstadoEnum.ACTIVO, 1000L);
-		ComicDTO comic02 = new ComicDTO("02", "Hunter X Hunter", "editorial", TematicaEnum.AVENTURAS, "coleccion", 100,
+		ComicDTO comic02 = new ComicDTO(02L, "Hunter X Hunter", "editorial", TematicaEnum.AVENTURAS, "coleccion", 100,
 				new BigDecimal(9000000), "autor", true, localDate, EstadoEnum.INACTIVO, 900L);
-		ComicDTO comic03 = new ComicDTO("03", "Dragon Ball Z", "editorial", TematicaEnum.DEPORTIVO, "coleccion", 200,
+		ComicDTO comic03 = new ComicDTO(03L, "Dragon Ball Z", "editorial", TematicaEnum.DEPORTIVO, "coleccion", 200,
 				new BigDecimal(8000000), "autor", true, localDate, EstadoEnum.ACTIVO, 800L);
-		ComicDTO comic04 = new ComicDTO("04", "Fairy Tail", "editorial", TematicaEnum.FANTASTICO, "coleccion", 300,
+		ComicDTO comic04 = new ComicDTO(04L, "Fairy Tail", "editorial", TematicaEnum.FANTASTICO, "coleccion", 300,
 				new BigDecimal(7000000), "autor", true, localDate, EstadoEnum.INACTIVO, 700L);
-		ComicDTO comic05 = new ComicDTO("05", "Eigthy six", "editorial", TematicaEnum.HISTORICO, "coleccion", 350,
+		ComicDTO comic05 = new ComicDTO(05L, "Eigthy six", "editorial", TematicaEnum.HISTORICO, "coleccion", 350,
 				new BigDecimal(6000000), "autor", true, localDate, EstadoEnum.ACTIVO, 600L);
-		ComicDTO comic06 = new ComicDTO("06", "Nanatsu no taizai", "editorial", TematicaEnum.AVENTURAS, "coleccion", 250,
+		ComicDTO comic06 = new ComicDTO(06L, "Nanatsu no taizai", "editorial", TematicaEnum.AVENTURAS, "coleccion", 250,
 				new BigDecimal(5000000), "autor", false, localDate, EstadoEnum.INACTIVO, 500L);
-		ComicDTO comic07 = new ComicDTO("07", "Dororo", "editorial", TematicaEnum.AVENTURAS, "coleccion", 150,
+		ComicDTO comic07 = new ComicDTO(07L, "Dororo", "editorial", TematicaEnum.AVENTURAS, "coleccion", 150,
 				new BigDecimal(4000000), "autor", false, localDate, EstadoEnum.ACTIVO, 400L);
-		ComicDTO comic08 = new ComicDTO("08", "High School of the Dead", "editorial", TematicaEnum.DEPORTIVO, "coleccion", 50,
+		ComicDTO comic08 = new ComicDTO(10L, "High School of the Dead", "editorial", TematicaEnum.DEPORTIVO, "coleccion", 50,
 				new BigDecimal(3000000), "autor", false, localDate, EstadoEnum.INACTIVO, 300L);
-		ComicDTO comic09 = new ComicDTO("09", "Full Metal Alchemist", "editorial", TematicaEnum.HISTORICO, "coleccion", 25,
+		ComicDTO comic09 = new ComicDTO(11L, "Full Metal Alchemist", "editorial", TematicaEnum.HISTORICO, "coleccion", 25,
 				new BigDecimal(2000000), "autor", false, localDate, EstadoEnum.ACTIVO, 200L);
-		ComicDTO comic10 = new ComicDTO("10", "Akame Ga Kill", "editorial", TematicaEnum.CIENCIA_FICCION, "coleccion",
+		ComicDTO comic10 = new ComicDTO(12L, "Akame Ga Kill", "editorial", TematicaEnum.CIENCIA_FICCION, "coleccion",
 				40, new BigDecimal(1000000), "autor", false, localDate, EstadoEnum.INACTIVO, 100L);
-
+		
 		/**
 		 * añade los comics al array
 		 */
+		
 		listaComic.add(comic01);
 		listaComic.add(comic02);
 		listaComic.add(comic03);
@@ -118,6 +120,7 @@ public class CreacionComicTest {
 		listaComic.add(comic08);
 		listaComic.add(comic09);
 		listaComic.add(comic10);
+		
 	}
 
 	/**
